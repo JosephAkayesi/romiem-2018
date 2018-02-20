@@ -1,0 +1,11 @@
+.Description {
+  position: relative;
+  box-sizing: border-box;
+  max-width: 456px;
+  padding-left: 56px; }
+
+.Description__Logo {
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 28px; }
