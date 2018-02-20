@@ -5,6 +5,7 @@
   background-size: cover;
   padding: 5% 6%;
   box-sizing: border-box;
+  opacity: 0;
 }
 
 .App__Social {
@@ -13,6 +14,30 @@
   top: 70px;
   width: 28px;
   padding: 5% 6%;
+  transform: translateY(60px);
+  opacity: 0;
+}
+
+.App__Description {
+  transform: translateY(60px);
+  opacity: 0;
+}
+
+.App.ready {
+  transition: opacity 1s cubic-bezier(0, 0.7, 0.3, 1);
+  opacity: 1;
+
+  .App__Social {
+    transition: all 0.7s cubic-bezier(0, 0.7, 0.3, 1) 0.5s;
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .App__Description {
+    transition: all 0.7s cubic-bezier(0, 0.7, 0.3, 1) 0.5s;
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 @media screen and (min-width: 640px) {
